@@ -39,6 +39,12 @@ function getMassaMolar(formulaQuimica) {
     return massa;
 }
 
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' ) {
+        calcularMassa();
+    }
+});
+
 function calcularMassa() {
     let formula = document.getElementById('formula').value;
     try {
